@@ -64,5 +64,6 @@ class Journal:
 # Basic structure of this file is complete. Retest all the functions before proceeding. 
 # edit_entry and edit_tags have some problems as they are failing tests. Reviewing the code now before proceeding further.
 # Remove these comments before proceeding.
+# Some errors in variables, wrong names used.
 
 
