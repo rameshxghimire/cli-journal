@@ -6,9 +6,6 @@ as another object.
 """
 
 version = "1.0.0"
-main_author = "Ramesh Ghimire"
-contributors = []
-
 
 last_id = 0        # Initializing a variable to store journal ids.
 
@@ -50,9 +47,13 @@ class Journal:
         self.entries = []
 
     def new_entry(self, content, tags=""):
-        """ Create a new Entry and append it in the list."""
+       # Create a new Entry and append it in the list.
         self.entries.append(Entry(content, tags))
 
+    # edit entry of given id
+    # @param entry_id [Integer] entry id
+    # @param content [String] new content to update/edit
+    # @return void sets entry
     def edit_entry(self, entry_id, content):
         """ Change the content of an entry by finding it with id."""
         for instance in self.entries:
