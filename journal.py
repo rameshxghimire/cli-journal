@@ -26,7 +26,6 @@ class Entry:
     def match(self, searchtext):
         """ Finds out if the note is retrived using a search text.
         """
-        # Ignore the character case
         return searchtext in self.content and self.tags
 
     def setContent(self, content):

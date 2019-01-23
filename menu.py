@@ -42,7 +42,7 @@ class Menu:
     def search_entries(self):
         filter = input("Search for: ")
         content = self.journal.search(filter)
-        self.show_entries(entries)
+        self.show_entries(content)
 
     def add_entries(self):
         content = input("Enter an entry: ")
@@ -54,9 +54,9 @@ class Menu:
         content = input("Enter the journal entry: ")
         tags = input("Enter tags: ")
         if content:
-            self.journal.modify_entries(id, content)
+            self.journal.edit_entry(id, content)
         if tags:
-            self.journal.modify_tags(id, tags)
+            self.journal.edit_tags(id, tags)
 
     def quit(self):
         print("Thank you for using your journal today.")
@@ -64,4 +64,3 @@ class Menu:
 
 if __name__ == "__main__":
     Menu().run()
-
